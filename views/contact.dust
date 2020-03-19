@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RecipeBook</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="/" class="active">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+  <div class="contact-form">
+    <h1>Contact Us</h1>
+    {msg}
+    <form  method="POST" action="send">
+      <div class="txtb">
+        <label>Full Name :</label>
+        <input type="text" name="name" value="" placeholder="Enter Your Name">
+      </div>
+
+      <div class="txtb">
+        <label>Email :</label>
+        <input type="email" name="email" value="" placeholder="Enter Your Email">
+      </div>
+
+      <div class="txtb">
+        <label>Phone Number :</label>
+        <input type="number" name="text" value="" placeholder="Enter Your Phone Number">
+      </div>
+
+      <div class="txtb">
+        <label>Message :</label>
+        <textarea name="message"></textarea>
+      </div>
+      <!--<a class="btn" type="submit">Send</a> -->
+      <button class="btn" type="submit">submit</button>
+   </form>
+
+  </div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
