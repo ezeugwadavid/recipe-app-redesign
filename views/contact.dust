@@ -45,7 +45,7 @@
         <textarea name="message"></textarea>
       </div>
       <!--<a class="btn" type="submit">Send</a> -->
-      <button class="btn" id="refreshButton" type="submit">submit</button>
+      <button class="btn"type="submit">submit</button>
    </form>
 
   </div>
