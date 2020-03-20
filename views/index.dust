@@ -1,16 +1,15 @@
 {>"layout" /}
 
-{<body}
-   <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#formModal">
-   Add Recipe
-   </button>
+{<body} <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#formModal">
+  Add Recipe
+  </button>
 
-<br/>
-
+  <br />
 
 
 
-{#menus}
+
+  {#menus}
   <div class="well">
     <h4 class= "border-top h-100 w-auto mb-5 my-5">{name} <button class="btn btn-default float-right"  data-toggle="collapse" href="#menus_{id}" aria-expanded="false" aria-controls="#menus_{id}">
   View
@@ -90,12 +89,6 @@ role="dialog" aria-labelledby="formModalLabel">
 
 
 
-
-
-
-
-
-
 <!--  Edit Form Modal -->
 <div class="modal fade" id="editFormModal" tabindex="-1"
 role="dialog" aria-labelledby="editFormModalLabel">
@@ -139,13 +132,5 @@ role="dialog" aria-labelledby="editFormModalLabel">
 </div>
 </div>
 </div>
-
-
-
-
-
-
-
-
 
 {/body}
