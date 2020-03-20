@@ -529,3 +529,12 @@ h4{
 
 
   }
+
+
+
+  @media screen and (max-width: 320px) {
+    .iphone{
+      margin-top: 35px;
+      margin-bottom: 15px;;
+    }
+  }

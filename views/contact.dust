@@ -21,7 +21,7 @@
   </div>
 
 
-  <div class="contact-form">
+  <div class="contact-form iphone" >
     <h1>Contact Us</h1>
     {msg}
     <form  method="POST" action="send">
@@ -37,7 +37,7 @@
 
       <div class="txtb">
         <label>Phone Number :</label>
-        <input type="number" name="text" value="" placeholder="Enter Your Phone Number">
+        <input type="number" name="text" value="" placeholder="Enter Your Number">
       </div>
 
       <div class="txtb">
@@ -45,7 +45,7 @@
         <textarea name="message"></textarea>
       </div>
       <!--<a class="btn" type="submit">Send</a> -->
-      <button class="btn" type="submit">submit</button>
+      <button class="btn" id="refreshButton" type="submit">submit</button>
    </form>
 
   </div>
@@ -72,7 +72,7 @@
 
 
 
-
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="/js/main.js"></script>
 </body>
 
