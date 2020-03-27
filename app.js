@@ -99,7 +99,7 @@ app.delete("/delete/:id", function(req, res) {
     // console.log('databaseconnected')
     client.query("DELETE FROM menus WHERE id = $1", [req.params.id]);
     done();
-    res.send(200);
+    res.sendStatus(200);
   });
 });
 
@@ -167,7 +167,7 @@ app.post("/send", (req, res) => {
         // default message fields
 
         // sender info
-        from: "Nodemailer Contact <isaiah.lehner70@ethereal.email>"
+        from: "Nodemailer Contact <judy.bergnaum@ethereal.email>"
       }
     );
 

@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RecipeBook</title>
-     <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 
@@ -15,41 +17,134 @@
 
 <body>
 
-       <div class="topnav" id="myTopnav">
-        <a href="/" class="active">Home</a>
-        <a href="/contact">contact</a>
-        <a href="/here">Add recipe</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-0 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal text-primary">Recipe App</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" href="/">Home</a>
+      <a class="p-2 text-dark" href="/contact">Contact</a>
+      <a class="p-2 text-dark" href="/about">About</a>
+      
+    </nav>
+    <a class="btn btn-outline-primary" href="/here">Add Recipe</a>
+  </div>
+
+
+
+    <!-- Page Content -->
+  <div class="container">
+
+    <!-- Heading Row -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-7">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="kitchen Image">
+      </div>
+      <!-- /.col-lg-8 -->
+      <div class="col-lg-5">
+        <h1 class="font-weight-light">About</h1>
+        <p>This is a Web Application that is great for people to share insights on their favourite Meals . It doesn't have too much fancy flare to it, but it makes a great use of the standard nodejs(backend) components for users to be able to add and view different recipes. Feel free to use this Web Application for any recipe you want to share!</p>
+        <a class="btn btn-primary" href="#">Call to Action!</a>
+      </div>
+      <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    <!-- Call to Action Well -->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+      <div class="card-body">
+        <p class="text-white m-0">We help users to share insights, view list of recipes and be able to gain knowledge through other users </p>
+      </div>
     </div>
 
-    <div class="center">
-  <section id="aboutus">
-      <div class="container">
-          <div class="row">
-              <div class="col-sm-7">
-                  <h2 class="text-center">David Ezeugwa</h2>
-                  <p>David Ezeugwa, a Student of Enugu State University Of Science And Technology(ESUT) and a javascript developer at the time of deployment of this site.</p><p>He is the developer and founder of this  site.    
-                     he is currently working hard to improve on this,he was inspiried by Gerrard Ezeugwa in the production of this website.<p>The Website 
-                        allows users to easily help other users who are in search of directions to prepare a certain type of Meal.
-                    </p>
-                  </p>
-              </div>
-
-              <div class="col-sm-5">
-                  <div class="img-wrap">
-                      <img src="https://media-exp1.licdn.com/dms/image/C5603AQGvTqRl1bxJ9w/profile-displayphoto-shrink_200_200/0?e=1590019200&v=beta&t=60S6IZwkv9QU1KO5Jfoi2z0gGpzVLyt0cP1zzSHY50g">
-
-                  </div>
-              </div>
-
-
+    <!-- Content Row -->
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Objectives</h2>
+            <p class="card-text">In our terms, the objective of any good recipe is continuity – clear enough direction for anyone to recreate the same dish, no matter who or where they are, with identical results.<br>Futhermore, It is meant to include the technical aspects of a dish while also teaching the artistic combination of flavor and texture. A recipe communicates the ingredients and procedures the chef uses to make his creations</p>
           </div>
+          <div class="card-footer">
+            <a href="https://www.theglobeandmail.com/life/food-and-wine/article-what-makes-a-recipe-good/" class="btn btn-primary btn-sm">More Info</a>
+          </div>
+        </div>
       </div>
-  </section>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">History</h2>
+            <p class="card-text">King Richard II of England commissioned a recipe book called Forme of Cury in 1390, and around the same time, another book was published entitled Curye on Inglish, "cury" meaning cooking.Both books give an impression of how food for the noble classes was prepared and served in England at that time. The luxurious taste of the aristocracy in the Early Modern Period brought with it the start of what can be called the modern recipe book. </p>
+          </div>
+          <div class="card-footer">
+            <a href="https://en.wikipedia.org/wiki/Recipe" class="btn btn-primary btn-sm">More Info</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Components</h2>
+            <p class="card-text">Our recipes normally consist of several components<br>
+<ul>
+  <li>The name of the recipe (Origins/History of the dish).</li>
+    <li>  Yield: The number of servings that the dish provides.</li>
+     <li>  List all ingredients in the order of its use. Describe it in step by step instructions.</li>
+</ul></p>
+          </div>
+          <div class="card-footer">
+            <a href="https://en.wikipedia.org/wiki/Recipe" class="btn btn-primary btn-sm">More Info</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
 
-</div>
+    </div>
+    <!-- /.row -->
+
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="https://thumbs.dreamstime.com/z/recipe-icon-trendy-design-style-isolated-white-background-vector-simple-modern-flat-symbol-web-site-mobile-logo-app-135747970.jpg"
+            alt="" width="80" height="80">
+          <small class="d-block mb-3 text-muted">&copy; 2020</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">All Recipes</a></li>
+            <li><a class="text-muted" href="/here">Mail Us</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Contact</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="fa" href="#">Facebook</a></li>
+            <li><a class="fa" href="#">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="/here">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+  </div>
+  <!-- /.container -->
 
 
 
@@ -59,6 +154,42 @@
 
 
 
-<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script src="/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 </html>

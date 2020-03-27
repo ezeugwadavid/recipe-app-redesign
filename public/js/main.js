@@ -4,11 +4,12 @@ $(document).ready(function(){
        var url = '/delete/'+id;
        if(confirm('Delete Recipe?')){
            $.ajax({
-               url: url,
+               url: url, 
                type: 'DELETE',
                success: function(result){
                    console.log('Deleting Recipe...');
-                   window.location.href='/';
+                   
+                   window.location.href='/here';
 
                },
                error: function(){
@@ -30,15 +31,5 @@ $('.edit-menus').on('click', function(){
 })
 
 
-
-
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
 
  
