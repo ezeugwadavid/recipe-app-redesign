@@ -35,7 +35,7 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL
 });
 
-app.get("/here", (req, res, next) => {
+app.get("/recipies", (req, res, next) => {
   pool.connect(function(err, client, done) {
     if (err) {
       console.log("Can not connect to the DB" + err);
@@ -50,7 +50,7 @@ app.get("/here", (req, res, next) => {
       // res.status(200).send(result.rows);
       //console.log('RESULT HERE OOOOOO', result)
 
-      res.render("index", { menus: result.rows });
+      res.render("recipies", { menus: result.rows });
 
       done();
     });
@@ -65,7 +65,7 @@ app.get("/here", (req, res, next) => {
 });
 
 app.get("/", function(req, res) {
-  res.render("home");
+  res.render("index");
 });
 
 app.get("/contact", function(req, res) {
@@ -87,7 +87,7 @@ app.post("/add", function(req, res) {
       [req.body.name, req.body.ingredients, req.body.instructions]
     );
     done();
-    res.redirect("/here");
+    res.redirect("/recipies");
   });
 });
 
@@ -114,7 +114,7 @@ app.post("/edit", function(req, res) {
       [req.body.name, req.body.ingredients, req.body.instructions, req.body.id]
     );
     done();
-    res.redirect("/here");
+    res.redirect("/recipies");
   });
 });
 
