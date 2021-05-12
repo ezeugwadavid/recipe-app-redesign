@@ -20,7 +20,7 @@
     "dustjs-helpers": "*",
     "dustjs-linkedin": "*",
     "express": "*",
-    "nodemailer": "^6.4.5",
+    "nodemailer": "^6.4.16",
     "nodemon": "^2.0.2",
     "pg": "*"
   }
